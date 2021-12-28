@@ -25,7 +25,7 @@ sc.fit(X_train)
 X_train_std = sc.transform(X_train)
 X_test_std = sc.transform(X_test)
 
-ppn = Perceptron(max_iter=40, eta0=0.1, random_state=0)
+ppn = Perceptron(max_iter=50, eta0=0.1, random_state=0)
 ppn.fit(X_train_std, Y_train)
 print(Y_test.shape)
 
